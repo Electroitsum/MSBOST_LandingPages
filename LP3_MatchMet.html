@@ -1,0 +1,1034 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="I Just Celebrated Pi Day!"/>
+    <title>MSBOST</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .container-fluid {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .ml-auto {
+            margin-left: auto !important;
+        }
+
+        .mr-auto {
+            margin-right: auto !important;
+        }
+
+        .align-items-center {
+            -ms-flex-align: center !important;
+            align-items: center !important;
+        }
+
+        .flex-column {
+            -ms-flex-direction: column !important;
+            flex-direction: column !important;
+        }
+
+        .d-flex {
+            display: -ms-flexbox !important;
+            display: flex !important;
+        }
+
+        .w-100 {
+            width: 100% !important;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .mb-3 {
+            margin-bottom: 1rem !important;
+        }
+
+        .p-0 {
+            padding: 0 !important;
+        }
+
+        .justify-content-between {
+            -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+        }
+
+        .main-container {
+            width: 80%;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        .header-text {
+            margin-top: 10px;
+            margin-bottom: 37px;
+            font-size: 11px;
+        }
+
+        .header-logo {
+            margin-bottom: 40px;
+            padding-left: 50px;
+            padding-right: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+            align-items: center;
+        }
+
+        .header-logo img {
+            height: 68px;
+        }
+
+        .logo-1 {
+            height: 39px;
+        }
+
+        .header-banner {
+            height: 90px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: #AA1565;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 29px;
+            font-weight: 600;
+            text-align: center;
+            color: white;
+        }
+
+        .banner {
+            width: 100%;
+            /* position: relative; */
+            /* height: 400px; */
+        }
+
+        
+
+        .banner img {
+            width: 100%;
+        }
+
+        .content-container {
+            padding: 35px 100px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cover-image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background-color: rgba(230, 231, 232, 1);
+            min-height: 205px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 30px;
+            padding-left: 30px;
+            margin-top: 80px;
+        }
+
+        .footer .footer-address {
+            font-size: 11px;
+            margin-bottom: 20px;
+        }
+
+        .footer .text-1 {
+            font-size: 13px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .footer .text-2,
+        .footer .text-3,
+        .footer .text-4 {
+            margin-bottom: 10px;
+        }
+
+        .footer-2 {
+            width: 100%;
+            min-height: 80px;
+            display: inline-flex;
+            align-items: center;
+            padding-left: 30px;
+            background-color: rgba(99, 102, 104, 1);
+            font-size: 12px;
+            color: white;
+        }
+
+        .social-icons {
+            display: flex;
+        }
+
+        .social-icons .fb-icon,
+        .social-icons .twitter-icon {
+            color: #ffffff;
+            background-color: #AA1565;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            /* border-radius: 100%; */
+            margin: 0 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .left-section {
+            width: 42%;
+        }
+
+        .left-section .para-1 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #AA1565;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .left-section .para-2 {
+            margin-bottom: 20px;
+        }
+
+        .left-section .para-3 {
+            margin-bottom: 20px;
+        }
+
+        .left-section .gift-gif {
+            display: flex;
+            justify-content: center;
+        }
+
+        .left-section .gift-gif img {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+
+        .left-section .para-4 {
+            margin-bottom: 20px;
+        }
+
+        .left-section .para-5 {
+            margin-bottom: 20px;
+        }
+
+        .left-section .left-image {
+            margin-bottom: 30px;
+        }
+
+        .left-section .left-image img {
+            width: 100%;
+        }
+
+        .share-page-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            margin-top: 150px;
+        }
+
+        .social-link {
+            padding: unset;
+            margin: unset;
+            list-style: none;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-link li {
+            display: inline-block;
+        }
+
+        .social-link li a {
+            color: #ffffff;
+            background-color: #A50063;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            /* border-radius: 100%; */
+            margin: 0 5px;
+            text-decoration: none;
+        }
+
+        .right-section {
+            width: 49%;
+        }
+
+        .right-section .gift-box {
+            background-color: rgba(221, 250, 245, 1);
+            width: 100%;
+            min-height: 210px;
+            padding: 15px 35px;
+            margin-bottom: 0px;
+        }
+
+        .gift-box .box-text-1 {
+            font-weight: 600;
+            font-size: 18px;
+            color: #3CC2B1;
+            text-transform: uppercase;
+        }
+
+        .gifting-buttons {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .gift-box .left-gifiting-buttons,
+        .gift-box .right-gifiting-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .gift-box .left-gifiting-buttons a,
+        .gift-box .right-gifiting-buttons a {
+            display: inline-flex;
+            width: 48%;
+            background-color: #3CC2B1;
+            height: 36px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .gift-box .left-gifiting-buttons a,
+        .gift-box .right-gifiting-buttons a {
+            display: inline-flex;
+            width: 48%;
+            background-color: #3CC2B1;
+            height: 36px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .gift-box .right-gifiting-buttons {
+            margin-bottom: 20px;
+        }
+
+        .gift-form {
+            font-size: 14px;
+        }
+
+        .gift-form input[type=radio] {
+            border: 1px solid black;
+            margin-right: 10px;
+        }
+
+        .right-section .text-1 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .right-section .text-2 {
+            font-size: 12px;
+            margin-bottom: 40px;
+        }
+
+        .storybook-box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: rgba(221, 250, 245, 1);
+            padding: 15px 35px;
+            padding-bottom: 80px;
+            margin-bottom: 50px;
+        }
+
+        .storybook-box .text-3 {
+            padding-right: 20px;
+        }
+
+        .storybook-box .list-1 {
+            margin-bottom: 10px;
+        }
+
+        .storybook-box .list-2 {
+            margin-bottom: 20px;
+        }
+
+        .storybook-box .list-3 {
+            margin-bottom: 0px;
+        }
+
+        .right-section .text-4 {
+            margin-bottom: 30px;
+        }
+
+        .right-section .billing-form {
+            width: 90%;
+        }
+
+        .right-section .billing,
+        .right-section .shipping,
+        .right-section .payment {
+            margin-bottom: 10px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .right-section .form-group-1,
+        .right-section .form-group-2,
+        .right-section .form-group-3,
+        .right-section .form-group-4,
+        .right-section .form-group-5,
+        .right-section .form-group-6,
+        .right-section .form-group-7,
+        .right-section .form-group-8,
+        .right-section .form-group-9,
+        .right-section .form-group-10 {
+            display: inline-flex;
+            flex-direction: column;
+            width: 40%;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + 0.75rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        .right-section .form-group-3,
+        .right-section .form-group-4 {
+            width: 81%;
+        }
+
+        .right-section .form-group-5 {
+            width: 30%;
+        }
+
+        .right-section .form-group-6 {
+            width: 10%;
+        }
+
+        .right-section .form-group-7 {
+            width: 39%;
+        }
+
+        .right-section .form-group-8 {
+            width: 45%;
+        }
+
+        .right-section .form-group-9 {
+            width: 35%;
+        }
+
+        .right-section .new-updates {
+            margin-bottom: 30px;
+        }
+
+        .right-section .payment-form {
+            width: 81%;
+        }
+
+        .card-image {
+            margin-bottom: 20px;
+        }
+
+        .card-image img {
+            height: 20px;
+            width: 170px;
+        }
+
+        .right-section .form-group-card-1 {
+            margin-bottom: 10px;
+        }
+
+        .right-section .form-group-card-12 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .right-section .form-group-card-2 {
+            width: 50%;
+        }
+
+        .right-section .form-group-card-22 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .right-section .form-group-card-22 .form-control {
+            width: 48%;
+        }
+
+        .right-section .form-group-card-3 {
+            width: 40%;
+        }
+
+        .match-my-gift-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .match-my-gift-container .gift-btn {
+            display: inline-flex;
+            font-size: 14px;
+            font-weight: 600;
+            color: white;
+            background-color: #AA1565;
+            width: 240px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .right-section .payment-text .text-11,
+        .right-section .payment-text .text-12 {
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 1440px) {
+            .gift-box .left-gifiting-buttons a, .gift-box .right-gifiting-buttons a {
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (max-width: 1366px) {
+            .right-section .gift-box {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            .content-container {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .main-container {
+                width: 95%;
+            }            
+        }
+
+        @media screen and (max-width: 768px) {
+            .main-container {
+                width: 90%;
+            }
+
+            .header-banner {
+                font-size: 20px;
+            }
+
+            .content-container {
+                padding: 20px;
+            }
+            .section-container {
+                flex-direction: column-reverse;
+            }
+            .left-section ,
+            .right-section {
+                width: 100%;
+            }
+            .right-section .billing-form {
+                width: 100%;
+            }
+            .right-section .payment-form {
+                width: 100%;
+            }
+            .right-section .form-group-card-1 {
+                width: 270px;
+            }
+            .right-section .form-group-card-3 {
+                width: 100px;
+                margin-left: 20px;
+            }
+            .right-section .form-group-card-12 {
+                justify-content: unset;
+            }
+        }
+
+        @media screen and (max-width: 540px) {
+            .header-logo img {
+                height: 40px;
+            }
+            .header-logo {
+                padding-left: 20px;
+                padding-top: 20px;
+            }
+            .content-container {
+                width: 100%;
+            }
+            .gift-box .left-gifiting-buttons, .gift-box .right-gifiting-buttons {
+                flex-direction: column;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .gift-box .left-gifiting-buttons a, .gift-box .right-gifiting-buttons a {
+                width: 100%;
+                margin-top: 10px;
+            }
+            .gift-box .right-gifiting-buttons {
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+            #gift-btn-4 {
+                margin-bottom: 20px;
+            }
+            .footer-pi-icon {
+                height: 100px;
+            }
+            .plus-icon {
+
+            }
+            .socks-icon {
+                height: 100px;
+            }
+            .right-section .form-group-1,
+            .right-section .form-group-2 {
+                width: 48%;
+            }
+            .right-section .form-group-3, .right-section .form-group-4 {
+                width: 98%;
+            }
+            .right-section .form-group-6 {
+                width: 20%;
+            }
+            .right-section .form-group-8,
+            .right-section .form-group-9 {
+                width: 48%;
+            }
+            .right-section .form-group-10 {
+                width: 98%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="main-container ml-auto mr-auto">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="header-logo w-100 pull-left">
+                        <img src="img/logo-1.png" />
+                    </div>
+                    <div class="banner">
+                        <img src="img/lp3headstr.png"/>
+                        <img src="img/LP3HeroMatchMet.png" />
+                        
+                    </div>
+                    <div class="content-container">
+
+                        <div class="container-fluid p-0">
+                            <div class="section-container d-flex justify-content-between">
+                                <div class="left-section">
+                                    <div class="para">
+                                        <div class="para-1">
+                                            UPDATE: MATCH MET! 
+                                        </div>
+
+                                        <div class="para-2">
+                                            Thanks to an incredible response from our community, we have reached our Pi Day match goal. But there’s still time to make your gift to the Museum of Science before 3/14!
+                                        </div>
+
+                                        <div class="para-3">
+                                            Your Pi Day gift right now will support our STEM (Science, Technology, Engineering, and Math) exhibits and programs that engage and inspire learners of all ages. And just as pi goes on forever, we depend on you to fulfill our mission, year after year!
+                                        </div>
+
+                                        <div class="gift-gif">
+                                            <img src="img/LP3MatchMetGifts.png" />
+                                        </div>
+                                        <div style="color: #A50063;font-size: 20px;font-weight: 600;margin-bottom: 30px;">EVERY GIFT SUPPORTS STEM LEARNING!</div>
+
+                                        <div class="para-4">
+                                            Ticket sales and membership fees traditionally cover 32% of the total costs required to maintain our exhibits and programs. We remain committed to fulfilling our mission of inspiring a lifelong love of science in everyone, but we can only do so with the continued support of friends like you.
+                                        </div>
+
+                                        <div class="para-5">So please be as generous as you can today.</div>
+
+                                        <div class="left-image">
+                                            <img src="img/lp3video1.png" />
+                                            <div
+                                                style="color: #A50063;font-weight: 600;font-size: 24px;margin-top: 15px;">
+                                                Making Science Awesome</div>
+                                        </div>
+                                        <div class="left-image">
+                                            <img src="img/lp3video2.png" />
+                                            <div
+                                                style="color: #A50063;font-weight: 600;font-size: 24px;margin-top: 15px;">
+                                                Bringing Science to People at the Pace of Change</div>
+                                        </div>
+                                        <div class="left-image">
+                                            <img src="img/lp3video3.png" />
+                                            <div
+                                                style="color: #A50063;font-weight: 600;font-size: 24px;margin-top: 15px;">
+                                                Inspiring a Lifelong Love of Science in Everyone</div>
+                                        </div>
+                                        <div class="share-page-text">
+                                            <span
+                                                style="border-top: 2px solid #A50063;display: inline-block;width: 50px;margin-top: 4px;"></span>
+                                            <span
+                                                style="font-size: 17px; font-weight: 600;color: #A50063;margin-left: 10px;margin-right: 10px;">Share
+                                                this page</span>
+                                            <span
+                                                style="border-top: 2px solid #A50063;display: inline-block;width: 50px;margin-top: 4px;"></span>
+                                        </div>
+                                        <ul class="social-link">
+                                            <li>
+                                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://engage.mos.org/piday2022/landingpages/LP3.html"
+                                                    target="_blank">
+                                                    <img src="img/fb-icon.png" />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://twitter.com/intent/tweet?url=https://engage.mos.org/piday2022/landingpages/LP3.html&text=I just celebrated Pi Day with a gift to the Museum of Science! Your donation by 3/14 will be matched to inspire a lifelong love of science in everyone. You can also receive a Penny Pi plush toy and Pi Day socks with your gift.&hashtags=PiDay,museumofscience"
+                                                    target="_blank">
+                                                    <img src="img/twitter-icon.png" />
+                                                </a>
+                                            </li>
+                                            <!-- <li>
+                                            <a href="https://twitter.com/intent/tweet?url=https://pursuant8.com/hspca/2021/nov/hspca11746/landing/landingpage.html&text=Help more animals in need find a home for the holidays with your gift to the @HoustonSPCA! Every dollar
+                                                of your gift will be matched, up to $50,000, as long as you give by December 31.&hashtags=holidays,animalrescue"
+                                                target="_blank">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li> -->
+                                        </ul>
+                                        <div class="d-flex w-100" style="justify-content: center;margin-top: 63px;">
+                                            <img src="img/PiLogo.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-section">
+                                    <div class="gift-box">
+                                        <div class="box-text-1">I’m ready to have my gift doubled!</div>
+                                        <div class="gifting-buttons">
+                                            <div class="left-gifiting-buttons">
+                                                <a id="gift-btn-1"
+                                                    onclick="clickButton(1)">$31.41</a>
+                                                <a id="gift-btn-2"
+                                                    onclick="clickButton(2)">$62.82</a>
+                                            </div>
+                                            <div class="right-gifiting-buttons">
+                                                <a id="gift-btn-3"
+                                                    onclick="clickButton(3)">$314.15</a>
+                                                <a id="gift-btn-4"
+                                                    onclick="clickButton(4)">$3,141.59</a>
+                                            </div>
+                                            <div class="gift-form">
+                                                <input type="radio">My best gift of $ &nbsp;<span><input type="text"
+                                                        style="border: none;outline: none;height: 30px;width: 80px;"></span>
+                                            </div>
+                                            <!-- <div class="text-2">
+                                                <em>Please note that we will provide a downloadable link to the digital storybooks.</em>
+                                            </div> -->
+                                            <div style="font-size: 14px;margin-top: 31px;margin-bottom: 35px;">
+                                                Make your gift of <strong>$31.41 or more</strong> to receive your
+                                                <strong>Penny Pi plush toy</strong>.
+                                            </div>
+                                            <div class="d-flex w-100" style="justify-content: center;">
+                                                <img src="img/footer-pi.png" class="footer-pi-icon" />
+                                            </div>
+                                            <div style="font-size: 14px;margin-top: 31px;margin-bottom: 35px;">
+                                                Make your gift of <strong>$62.82 or more</strong> to receive your
+                                                <strong>Penny Pi plush toy</strong> <em>and</em> your <strong>Pi Day
+                                                    Socks</strong>.
+                                            </div>
+                                            <div class="d-flex w-100"
+                                                style="align-items: center; justify-content: center;">
+                                                <img src="img/footer-pi.png" class="footer-pi-icon" />
+                                                <img src="img/plus.png" class="plus-icon" style="margin-left: 20px;margin-right: 20px;" />
+                                                <img src="img/Socks.png" class="socks-icon" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="storybook-box">
+                                        <div class="text-3">
+                                            <div class="list-1">
+                                                <input type="radio" style="margin-right: 5px;"><b>I prefer not to
+                                                    receive the Penny Pi plush toy.</b>
+                                            </div>
+                                            <div class="list-2">
+                                                <input type="radio" style="margin-right: 5px;"><b>I prefer not to
+                                                    receive the Pi Day socks.</b>
+                                            </div>
+                                            <div style="font-size: 14px;margin-bottom: 30px;">
+                                                <em>*We’re sorry, but at this time we are unable to ship to P.O. boxes
+                                                    or international addresses. </em>
+                                            </div>
+                                            <div style="font-size:14px;">
+                                                Value of benefits for accepting the donation:<br>
+                                                Plush toy: $12.99<br>
+                                                Pi Day socks: $7.15<br>
+                                                No benefits accepted: 100% tax deductible
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="billing-form">
+
+                                        <h5 class="billing">Billing Information</h5>
+                                        <form>
+                                            <div class="form-group-1">
+                                                <label>First Name</label>
+                                                <input type="text" class="personal-info form-control">
+                                            </div>
+                                            <div class="form-group-2">
+                                                <label>Last Name</label>
+                                                <input type="text" class="personal-info form-control">
+                                            </div>
+                                            <div class="form-group-3">
+                                                <label>Address</label>
+                                                <input type="text" class="address form-control">
+                                            </div>
+                                            <div class="form-group-4">
+                                                <label>Address 2</label>
+                                                <input type="text" class="address-2 form-control">
+                                            </div>
+                                            <div class="form-group-5">
+                                                <label>City</label>
+                                                <input type="text" class="location form-control">
+                                            </div>
+                                            <div class="form-group-6">
+                                                <label>State</label>
+                                                <select name="city" id="city" class="form-control">
+                                                    <option value="0"></option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group-7">
+                                                <label>ZIP</label>
+                                                <input type="text" class="location form-control">
+                                            </div>
+                                            <div class="form-group-8">
+                                                <label>Country</label>
+                                                <input type="text" class="location form-control">
+                                            </div>
+                                            <div class="form-group-9">
+                                                <label>Phone</label>
+                                                <input type="tel" class="contact form-control">
+                                            </div>
+                                            <div class="form-group-10">
+                                                <label>Email</label>
+                                                <input type="email" class="contact form-control">
+                                            </div>
+
+                                            <p class="new-updates">
+                                                <input type="radio"> Please send me updates on new exhibits, events and
+                                                other
+                                                Museum news.
+                                            </p>
+
+                                        </form>
+
+                                    </div>
+                                    <div class="shipping-form">
+
+                                        <h5 class="shipping">Shipping Information</h5>
+
+                                        <p class="new-updates">
+                                            <input type="radio"> Shipping Information is the same as my Billing
+                                            Information.
+                                        </p>
+
+                                    </div>
+
+                                    <div class="payment-form">
+
+                                        <h5 class="payment">Enter Payment Information</h5>
+                                        <div class="card-image">
+                                            <img src="img/credit-cards.png">
+                                        </div>
+                                        <div class="card-detail">
+                                            <form class="card-detail">
+                                                <div class="form-group-card-1">
+                                                    <label>Card Number</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group-card-12">
+                                                    <div class="form-group-card-2">
+                                                        <label id="expire-date">Expiration Date</label>
+                                                        <div class="form-group-card-22">
+                                                            <select name="month" id="month" class="form-control">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                                <option value="11">11</option>
+                                                                <option value="12">12</option>
+                                                            </select>
+                                                            <select name="month" id="month" class="form-control">
+                                                                <option value="2021">2021</option>
+                                                                <option value="2022">2022</option>
+                                                                <option value="2023">2023</option>
+                                                                <option value="2024">2024</option>
+                                                                <option value="2025">2025</option>
+                                                                <option value="2026">2026</option>
+                                                                <option value="2027">2027</option>
+                                                                <option value="2028">2028</option>
+                                                                <option value="2029">2029</option>
+                                                                <option value="2030">2030</option>
+                                                                <option value="2031">2031</option>
+                                                                <option value="2032">2032</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-card-3">
+                                                        <label>CVV</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                                <!-- <input type="submit" name="Make my Gift" id="submit"> -->
+                                                <div class="match-my-gift-container">
+                                                    <span class="gift-btn">MATCH MY GIFT</span>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer">
+                        <div class="footer-address">
+                            <img src="img/logo-1.png" />
+                            <div class="text-1">
+                                Museum of Science
+                            </div>
+                            <div class="text-2">
+                                1 Science Park
+                            </div>
+                            <div class="text-3">
+                                Boston, MA 02114
+                            </div>
+                            <div class="text-4">
+                                617-589-0370
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-2">
+                        Copyright ©2022 • All rights reserved • Privacy Policy • Terms of Use
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const giftBtn1 = document.querySelector('#gift-btn-1')
+        const giftBtn2 = document.querySelector('#gift-btn-2')
+        const giftBtn3 = document.querySelector('#gift-btn-3')
+        const giftBtn4 = document.querySelector('#gift-btn-4')
+
+        function clickButton(id) {
+            if(id == 1) {
+                giftBtn1.style.backgroundColor = '#AA1565'
+                giftBtn2.style.backgroundColor = '#3CC2B1'
+                giftBtn3.style.backgroundColor = '#3CC2B1'
+                giftBtn4.style.backgroundColor = '#3CC2B1'
+            }
+            else if(id == 2) {
+                giftBtn1.style.backgroundColor = '#3CC2B1'
+                giftBtn2.style.backgroundColor = '#AA1565'
+                giftBtn3.style.backgroundColor = '#3CC2B1'
+                giftBtn4.style.backgroundColor = '#3CC2B1'
+            }
+            else if(id == 3) {
+                giftBtn1.style.backgroundColor = '#3CC2B1'
+                giftBtn2.style.backgroundColor = '#3CC2B1'
+                giftBtn3.style.backgroundColor = '#AA1565'
+                giftBtn4.style.backgroundColor = '#3CC2B1'
+            }
+            else if(id == 4) {
+                giftBtn1.style.backgroundColor = '#3CC2B1'
+                giftBtn2.style.backgroundColor = '#3CC2B1'
+                giftBtn3.style.backgroundColor = '#3CC2B1'
+                giftBtn4.style.backgroundColor = '#AA1565'
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

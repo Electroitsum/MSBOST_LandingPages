@@ -1,0 +1,604 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="I Just Celebrated Pi Day!"/>
+    <title>MSBOST</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .container-fluid {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .ml-auto {
+            margin-left: auto !important;
+        }
+
+        .mr-auto {
+            margin-right: auto !important;
+        }
+
+        .align-items-center {
+            -ms-flex-align: center !important;
+            align-items: center !important;
+        }
+
+        .flex-column {
+            -ms-flex-direction: column !important;
+            flex-direction: column !important;
+        }
+
+        .d-flex {
+            display: -ms-flexbox !important;
+            display: flex !important;
+        }
+
+        .w-100 {
+            width: 100% !important;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .mb-3 {
+            margin-bottom: 1rem !important;
+        }
+
+        .main-container {
+            width: 80%;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        .header-text {
+            margin-top: 10px;
+            margin-bottom: 37px;
+            font-size: 11px;
+        }
+
+        .header-logo {
+            margin-bottom: 16px;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            align-items: center;
+        }
+
+        .logo-1 {
+            height: 39px;
+        }
+
+        .header-banner {
+            height: 90px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: #AA1565;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 29px;
+            font-weight: 600;
+            text-align: center;
+            color: white;
+        }
+
+        .banner {
+            width: 100%;
+            /* height: 400px; */
+        }
+
+        .banner img {
+            width: 100%;
+        }
+
+        .content-container {
+            padding: 35px 100px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title-heading {
+            font-size: 50px;
+            color: #A50063;
+            margin-bottom: 47px;
+            text-align: center;
+        }
+
+        .para-1 {
+            margin-bottom: 20px;
+            line-height: 24px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .para-2 {
+            margin-bottom: 20px;
+            line-height: 24px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .para-3 {
+            line-height: 24px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .para-4 {
+            font-size: 30px;
+            color: #A50063;
+            margin-top: 51px;
+        }
+
+        .upload-img-div {
+            width: 222px;
+            min-height: 154px;
+            background-color: rgba(221, 221, 221, 1);
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-items: center;
+            margin-top: 26px;
+            margin-bottom: 36px;
+            cursor: pointer;
+        }
+
+        .upload-text {
+            font-size: 16px;
+            color: #414141;
+            margin-top: 15px;
+        }
+
+        .text-area {
+            border: 2px solid rgba(110, 110, 110, 1);
+            border-radius: 8px;
+            width: 40%;
+            height: 71px;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .giftbtn{
+            text-decoration: none;
+            color: white;
+        }
+
+        .form-input {
+            border: 2px solid rgba(110, 110, 110, 1);
+            border-radius: 8px;
+            width: 40%;
+            padding: 10px;
+            height: 46px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .share-now-btn {
+            display: inline-flex;
+            font-size: 14px;
+            font-weight: 600;
+            color: white;
+            background-color: #AA1565;
+            width: 180px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-decoration: none;
+            margin-bottom: 61px;
+        }
+
+        .cover-image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background-color: rgba(230, 231, 232, 1);
+            min-height: 205px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 30px;
+            padding-left: 30px;
+            margin-top: 80px;
+        }
+
+        .footer .footer-address {
+            font-size: 11px;
+            margin-bottom: 20px;
+        }
+
+        .footer .text-1 {
+            font-size: 13px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .footer .text-2,
+        .footer .text-3,
+        .footer .text-4 {
+            margin-bottom: 10px;
+        }
+
+        .footer-2 {
+            width: 100%;
+            min-height: 80px;
+            display: inline-flex;
+            align-items: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: rgba(99, 102, 104, 1);
+            font-size: 12px;
+            color: white;
+        }
+
+        .social-icons {
+            display: flex;
+        }
+
+        .social-icons .fb-icon,
+        .social-icons .twitter-icon {
+            color: #ffffff;
+            background-color: #AA1565;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            /* border-radius: 100%; */
+            margin: 0 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .thank-you-popup {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            width: 500px;
+            height: auto;
+            padding: 50px;
+            top: -150vh;
+            left: calc(50% - 250px);
+            z-index: 10;
+            background-color: white;
+            line-height: 24px;
+            box-shadow: 0 0px 2px #00000029;
+            transition: all 0.3s linear;
+        }
+
+        .tnc-popup {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            width: 500px;
+            height: calc(100vh - 60px);
+            padding: 50px;
+            top: -150vh;
+            left: calc(50% - 250px);
+            z-index: 10;
+            background-color: white;
+            line-height: 24px;
+            box-shadow: 0 0px 2px #00000029;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            transition: all 0.3s linear;
+        }
+
+        .tnc-popup::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .tnc-popup::-webkit-scrollbar-track {
+            background: transparent;
+            /* color of the tracking area */
+        }
+
+        .tnc-popup::-webkit-scrollbar-thumb {
+            border-radius: 20px;
+            border: 3px solid grey;
+        }
+
+        .match-gift-btn {
+            display: inline-flex;
+            font-size: 14px;
+            font-weight: 600;
+            color: white;
+            background-color: #AA1565;
+            width: 180px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 43px;
+        }
+
+        .tnc-popup li::marker {
+            color: #A50063;
+        }
+
+        .overlay {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            z-index: 9;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        @media screen and (max-width: 1440px) {
+            .text-area {
+                min-height: 90px;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            .text-area {
+                width: 70%;
+            }
+            .form-input {
+                width: 70%;
+            }
+            .tnc-text {
+                width: 70% !important;
+            }
+            .main-container {
+                width: 95%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .main-container {
+                width: 90%;
+            }
+
+            .gift-gif img {
+                width: 100%;
+            }
+
+            .header-banner {
+                font-size: 20px;
+            }
+
+            .content-container {
+                padding: 20px;
+            }
+        }
+
+        @media screen and (max-width: 540px) {
+            .tnc-popup {
+                width: 95vw;
+                left: 2.5vw;
+                height: 60vh;
+            }
+            .thank-you-popup {
+                width: 95vw;
+                left: 2.5vw;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            .title-heading {
+                font-size: 30px;
+            }
+            .text-area {
+                width: 90%;
+            }
+            .form-input {
+                width: 90%;
+            }
+            .tnc-text {
+                width: 90% !important;
+            }
+            .logo-1 {
+                height: 30px;
+            }
+            .logo-2 {
+                height: 55px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="main-container ml-auto mr-auto">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="header-logo w-100 pull-left">
+                        <img src="img/logo-1.png" class="logo-1" />
+                        <img src="img/PiLogo.png" class="logo-2" />
+                    </div>
+                    <div class="banner">
+                        <img src="img/LP1HeroImage.png" />
+                    </div>
+                    <div class="content-container">
+                        <div class="title-heading">Share your Museum Moment!</div>
+                        <div class="para-1">The modern Museum of Science has been educating visitors for more than 70
+                            years, making a powerful impact on families and learners of all ages. <strong>If you have a
+                                special Museum Moment that has shaped you, your family, or your children, please share a
+                                selfie and tell us your story!</strong></div>
+                        <div class="para-2">Do you remember taking a school field trip to the Museum? Your child’s first
+                            glimpse of a favorite furry friend at the <em>Live Animal Care Center?</em> Did you plan a
+                            special date night at the Planetarium? Or attend a virtual concert or art experience through
+                            SubSpace? Let us know!</div>
+                        <div class="para-3">We’ll share your photos and stories in our online album for Pi Day, so don’t
+                            wait!</div>
+                        <div class="para-4">Here's my photo:</div>
+                        <div class="upload-img-div">
+                            <img src="img/upload-alt.png" />
+                            <div class="upload-text">Click here to upload</div>
+                        </div>
+                        <textarea class="text-area"
+                            placeholder="Here’s why this is my favorite Museum Moment: [Photo Caption, limit 100 characters]"></textarea>
+                        <input type="text" class="form-input" placeholder="First name" />
+                        <input type="text" class="form-input" placeholder="Last name" />
+                        <input type="email" class="form-input" placeholder="Email" />
+                        <div class="tnc-text" style="display: flex;align-items: center;width: 40%;margin-bottom: 61px;">
+                            <input type="checkbox" style="margin-right: 5px;" /><span style="color: #6E6E6E;">I agree
+                                with your <a onclick="showTnC()" style="color: 00a0c4;text-decoration: underline;cursor: pointer;">terms and conditions</a>.</span>
+                        </div>
+                        <div class="share-now-btn" onclick="thankYou()">
+                            SHARE NOW
+                        </div>
+                        <div class="social-icons">
+                            <div class="fb-icon">
+                                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://engage.mos.org/piday2022/landingpages/LP3.html"
+                  target="_blank"
+                  ><img src="img/fb-icon.png" /></a>
+                            </div>
+                            <div class="twitter-icon">
+                                <a
+                                href="https://twitter.com/intent/tweet?url=https://engage.mos.org/piday2022/landingpages/LP3.html&text=I just celebrated Pi Day with a gift to the Museum of Science! Your donation by 3/14 will be matched to inspire a lifelong love of science in everyone. You can also receive a Penny Pi plush toy and Pi Day socks with your gift.&hashtags=PiDay,museumofscience"
+                                target="_blank"
+                                ><img src="img/twitter-icon.png" /></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer">
+                        <div class="footer-address">
+                            <img src="img/logo-1.png" />
+                            <div class="text-1">
+                                Museum of Science
+                            </div>
+                            <div class="text-2">
+                                1 Science Park
+                            </div>
+                            <div class="text-3">
+                                Boston, MA 02114
+                            </div>
+                            <div class="text-4">
+                                617-589-0370
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-2">
+                        Copyright ©2022 • All rights reserved • Privacy Policy • Terms of Use
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="thank-you-popup">
+        <div style="font-size: 30px;font-weight: 600;color: #A50063;margin-bottom: 30px;line-height: 30px;text-align: center;">Thanks for joining in!</div>
+
+We’re excited to share photos and stories of your favorite Museum Moments to celebrate Pi Day, our day of giving. Please join with our Museum of Science family by making a gift to ensure many more memorable moments for generations to come!
+
+Don’t feel like sharing? No problem. Your gift to the Museum will ensure memorable moments for generations to come!
+<div class="match-gift-btn"><a href="https://engage.mos.org/piday2022/landingpages/LP3.html" target="_blank" class="giftbtn">MAKE MY GIFT</a></div>
+    </div>
+
+    <div class="tnc-popup">
+        <div
+            style="font-size: 30px;font-weight: 600;color: #A50063;margin-bottom: 30px;line-height: 30px;text-align: center;">
+            Terms and Conditions for Submission of Your Content</div>
+        <div>
+            Hello! Welcome to the Museum of Science (the “Museum”, “we”, “us” or “our”). Please read these Terms and
+            Conditions carefully before you share your story and any personal information or media with us.
+        </div>
+        <div style="margin-top: 30px;">
+            By submitting content, information or other media (individually and collectively, “your content”) to the
+            Museum or clicking “I agree,” you confirm that you have read, understand, and agree to the following:
+        </div>
+        <ul style="margin-top: 30px;">
+            <li>You represent, warrant and covenant that you will only provide the Museum with your content which you
+                have the right to provide to us and that the information you provide in your content will be true and
+                correct.</li>
+            <li>You irrevocably authorize the Museum to use, display, copy, modify and distribute your content for any
+                informational, fundraising, or promotional purposes.</li>
+            <li>You understand and agree that the Museum can use and display in any format any of your content,
+                including without limitation your personal information, that you provide to the Museum. </li>
+            <li>You authorize us the right to verify the information you submit with other information we may have in
+                our files or otherwise available to us. </li>
+            <li>You authorize us to contact you for additional information if we think it would be helpful or necessary
+                to do so. </li>
+            <li>You understand and agree that you will not be paid or reimbursed, and the Museum is not obligated to
+                compensate you, in any way for your content you provide to us or the Musuem’s exercise of its rights
+                under these Terms and Conditions. </li>
+            <li>You consent to the use, distribution, and redistribution of your content by the Museum and its
+                employees, contractors, and representatives. </li>
+            <li>You understand and agree that you do not have the right to inspect or approve any finished version of
+                your content. </li>
+            <li>You release and agree to indemnify and hold harmless the Museum, its employees, contractors, and
+                representatives from any claims, lawsuits, injury, and/or damages as a result of your content you
+                provide to us. This includes but is not limited to claims for personal injury (including injury to
+                reputation), property damage, invasion of privacy, and/or breach of confidentiality.</li>
+            <li>You represent and warrant that your age is 18 years or more or that your parent or guardian is agreeing
+                to these Terms and Conditions on your behalf.</li>
+        </ul>
+    </div>
+    <div class="overlay"></div>
+
+    <script>
+        function showTnC() {        
+            const overlay = document.querySelector('.overlay')
+            overlay.style.display = 'block'
+            const tnc = document.querySelector('.tnc-popup')
+            tnc.style.top = window.innerWidth > 540 ? '30px' : '100px'
+            overlay.addEventListener('click', () => {
+                overlay.style.display = 'none'
+                tnc.style.top = '-100vh'
+            })
+        }
+        function thankYou() {       
+            const overlay = document.querySelector('.overlay')
+            overlay.style.display = 'block'     
+            const thanks = document.querySelector('.thank-you-popup')
+            thanks.style.top = '20%'
+            overlay.addEventListener('click', () => {
+                overlay.style.display = 'none'
+                thanks.style.top = '-100vh'
+            })
+        }
+    </script>
+
+</body>
+
+</html>
